@@ -16,9 +16,16 @@
 
 
 def in_or_float(string_to_check):
-    return False 
+    returnValue = False
+    try:
+        returnValue = float(string_to_check)
+        returnValue = int(string_to_check)
+    except:
+        pass
+    return returnValue
 
-    
+
+print (in_or_float)
 
 print("*" * 75)
 
@@ -49,7 +56,7 @@ def slope_intercept(m, b, a, an):
 while True:
     a = input("Give me an a")
     
-    slope_intercept():
+#    slope_intercept():
 
 
 print("*" * 75)
@@ -68,6 +75,6 @@ def Quadratic_formula(a, b, c):
 
 
 
-a = 1
-b = -3
-c = 2
+    a = 1
+    b = -3
+    c = 2
