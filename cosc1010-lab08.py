@@ -1,8 +1,8 @@
-# Your Name Here
+# Hawkins Kopp
 # UWYO COSC 1010
 # Submission Date
-# Lab XX
-# Lab Section:
+# Lab 08
+# Lab Section: 16
 # Sources, people worked with, help given to:
 # your
 # comments
@@ -15,8 +15,12 @@
 # Floats should only have one decimal point in them 
 
 
-print("*" * 75)
+def in_or_float(string_to_check):
+    return False 
 
+    
+
+print("*" * 75)
 
 # Point-slope y = mx + b
 # This is used in mathematics to determine what the value y would be for any given x
@@ -37,9 +41,18 @@ print("*" * 75)
 # Exit on the word exit
 # Remember all inputs are strings, but the function needs ints or floats
 # Call your function and print the resulting list
+ 
+def slope_intercept(m, b, a, an):
+    y_arr = []
+    return y_arr
+
+while True:
+    a = input("Give me an a")
+    
+    slope_intercept():
+
 
 print("*" * 75)
-
 
 # Write a function to solve the quadratic formula
 # https://en.wikipedia.org/wiki/Quadratic_formula
@@ -48,3 +61,13 @@ print("*" * 75)
 # Create a loop like above to prompt the user for input for the three values
 # Create a second function that just does the square root operation 
     # If the number you are trying to take the square root of is negative, return null
+# Use code from part 1
+
+def Quadratic_formula(a, b, c):
+
+
+
+
+a = 1
+b = -3
+c = 2
