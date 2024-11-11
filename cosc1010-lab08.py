@@ -4,7 +4,7 @@
 # Lab 08
 # Lab Section: 16
 # Sources, people worked with, help given to:
-# your
+# Class note, lab notes
 # comments
 # here
 
@@ -16,14 +16,17 @@
 
 
 def in_or_float(string_to_check):
-    returnValue = False
     try:
-        returnValue = float(string_to_check)
-        returnValue = int(string_to_check)
-    except:
+        # Try converting the string to float
+        return_value = float(string_to_check)
+        
+        # Check if it's a float with one decimal point
+        if string_to_check.count('.') == 1:
+            return return_value
+    except ValueError:
         pass
-    return returnValue
 
+    return False
 
 print (in_or_float)
 
@@ -49,14 +52,26 @@ print("*" * 75)
 # Remember all inputs are strings, but the function needs ints or floats
 # Call your function and print the resulting list
  
-def slope_intercept(m, b, a, an):
+def slope_intercept(m, b, a, an): #a=1 b=
     y_arr = []
     return y_arr
 
 while True:
-    a = input("Give me an a")
-    
-#    slope_intercept():
+    m_input = input("Enter slope (m):")
+    if m_input.lower() == 'exit':
+        break
+
+    b_input = input("Enter intercept (b):")
+    if b_input.lower() == 'exit':
+        break
+
+    lower_x_input = input("Enter lower x bound:")
+    if lower_x_input.lower() == 'exit':
+        break
+
+    upper_x_input = input("Enter upper x bound:")
+    if upper_x_input.lower() == 'exit':
+        break
 
 
 print("*" * 75)
@@ -70,11 +85,26 @@ print("*" * 75)
     # If the number you are trying to take the square root of is negative, return null
 # Use code from part 1
 
+import math
+
+def in_or_float(string_to_check):
+    try:
+        return_value = float(string_to_check)
+
+        if string_to_check.count('.') == 1:
+            return return_value
+    except ValueError:
+        pass
+
 def Quadratic_formula(a, b, c):
 
+    a = in_or_float(a)
+    b = in_or_float(b)
+    c = in_or_float(c)
 
+    if a is False or b is False or c is False:
+        return "Invalid input: coefficients must be integers or floats."
 
+    if a == 0:
+        return "Coefficient 'a' cannot be zero in a quadratic equation."
 
-    a = 1
-    b = -3
-    c = 2
